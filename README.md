@@ -1,2 +1,2 @@
 # Cursor Trail
-![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![](https://github.com/SGezha/Cursor-Trail/blob/master/assets/trail.png?raw=true)
