@@ -22,6 +22,15 @@ startAnimation = () => {
         addPoint(clientX - canvas.offsetLeft, clientY - canvas.offsetTop);
     }, false);
 
+
+    // resize event
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    window.addEventListener("resize", ({ target: { innerWidth, innerHeight } }) => {
+        canvas.width = innerWidth;
+        canvas.height = innerHeight;
+    }, false);
+
     const animatePoints = () => {
         ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
         const duration = 0.5 * (1 * 1000) / 300; // (fps) Last 80% of a frame per point
